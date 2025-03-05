@@ -1,13 +1,11 @@
-﻿using ReportBuilderAPI.Application.Interfaces;
-using ReportBuilderAPI.Persistence.Context;
+﻿using Microsoft.EntityFrameworkCore;
+using ReportBuilderAPI.Application.Interfaces;
 using ReportBuilderAPI.Domain.Entities;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using ReportBuilderAPI.Domain.Entities.Common;
+using ReportBuilderAPI.Persistence.Context;
 
 namespace ReportBuilderAPI.Persistence.Repositories
 {
-    public class HarmanlamaRepository(ProjectDbContext context) : BaseEntity, IHarmanlamaRepository
+    public class HarmanlamaRepository(ProjectDbContext context) : IHarmanlamaRepository
     {
         public async Task<IList<Harmanlama>> GetHarmanlamaByDateAsync(DateTime startDate, DateTime endDate)
         {
@@ -49,5 +47,7 @@ namespace ReportBuilderAPI.Persistence.Repositories
         }
         public DbSet<Harmanlama> Table => context.Set<Harmanlama>();
         public IQueryable<Harmanlama> GetAll() => Table.AsNoTracking();
+        public async Task<Harmanlama> GetById(int id) => await Table.FirstOrDefaultAsync(s => s.id == id);
+
     }
 }

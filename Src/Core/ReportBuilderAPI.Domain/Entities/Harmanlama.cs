@@ -20,12 +20,13 @@ public class Harmanlama : BaseEntity
 
     public int alinacak { get; set; }
     public int alinan { get; set; }
-    public int shut { get; set; }
     public int silo_no { get; set; }
-    public int SUMCHECK { get; set; }
-    public int COUNTER { get; set; }
 
     public required Recete Recete { get; set; }
     public Hammadde Hammadde { get; set; }
 }
 
+//Select recete_id, alinacak, alinan From std_tbl_rapor_harmanlama WHERE
+//std_tbl_rapor_harmanlama.dt >= '2/25/2025 4:03:09'
+//AND
+//std_tbl_rapor_harmanlama.dt <= '3/5/2025 4:03:09'

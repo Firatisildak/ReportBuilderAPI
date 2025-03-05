@@ -1,20 +1,46 @@
 [
   {
     "ContainingType": "ReportBuilderAPI.API.Controllers.HarmanlamaController",
+    "Method": "GetAllHarmanlama",
+    "RelativePath": "api/Harmanlama/GetAllHarmanlama",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ReportBuilderAPI.API.Controllers.HarmanlamaController",
     "Method": "GetByDate",
-    "RelativePath": "api/Harmanlama/by-date",
+    "RelativePath": "api/Harmanlama/GetByDate",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "startDate",
-        "Type": "System.DateTime",
+        "Type": "System.String",
         "IsRequired": false
       },
       {
         "Name": "endDate",
-        "Type": "System.DateTime",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ReportBuilderAPI.API.Controllers.HarmanlamaController",
+    "Method": "GetByIdHarmanlama",
+    "RelativePath": "api/Harmanlama/GetByIdHarmanlama",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
         "IsRequired": false
       }
     ],
@@ -23,7 +49,7 @@
   {
     "ContainingType": "ReportBuilderAPI.API.Controllers.HarmanlamaController",
     "Method": "GetByReceteAndRevizyon",
-    "RelativePath": "api/Harmanlama/by-recete-revizyon",
+    "RelativePath": "api/Harmanlama/GetByReceteAndRevizyon",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -49,16 +75,6 @@
         "IsRequired": false
       }
     ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ReportBuilderAPI.API.Controllers.HarmanlamaController",
-    "Method": "GetAllKamyon",
-    "RelativePath": "api/Harmanlama/GetAllKamyon",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
     "ReturnTypes": []
   }
 ]

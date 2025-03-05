@@ -5,7 +5,7 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/Harmanlama/by-date": {
+    "/api/Harmanlama/GetByDate": {
       "get": {
         "tags": [
           "Harmanlama"
@@ -15,16 +15,14 @@
             "name": "startDate",
             "in": "query",
             "schema": {
-              "type": "string",
-              "format": "date-time"
+              "type": "string"
             }
           },
           {
             "name": "endDate",
             "in": "query",
             "schema": {
-              "type": "string",
-              "format": "date-time"
+              "type": "string"
             }
           }
         ],
@@ -35,7 +33,7 @@
         }
       }
     },
-    "/api/Harmanlama/GetAllKamyon": {
+    "/api/Harmanlama/GetAllHarmanlama": {
       "get": {
         "tags": [
           "Harmanlama"
@@ -47,7 +45,29 @@
         }
       }
     },
-    "/api/Harmanlama/by-recete-revizyon": {
+    "/api/Harmanlama/GetByIdHarmanlama": {
+      "get": {
+        "tags": [
+          "Harmanlama"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Harmanlama/GetByReceteAndRevizyon": {
       "get": {
         "tags": [
           "Harmanlama"

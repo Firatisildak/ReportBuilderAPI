@@ -13,3 +13,4 @@ C:\Users\Geotek\source\repos\ReportBuilderAPI\Src\Core\ReportBuilderAPI.Applicat
 C:\Users\Geotek\source\repos\ReportBuilderAPI\Src\Core\ReportBuilderAPI.Application\obj\Debug\net8.0\refint\ReportBuilderAPI.Application.dll
 C:\Users\Geotek\source\repos\ReportBuilderAPI\Src\Core\ReportBuilderAPI.Application\obj\Debug\net8.0\ReportBuilderAPI.Application.pdb
 C:\Users\Geotek\source\repos\ReportBuilderAPI\Src\Core\ReportBuilderAPI.Application\obj\Debug\net8.0\ref\ReportBuilderAPI.Application.dll
+C:\Users\Geotek\source\repos\ReportBuilderAPI\Src\Core\ReportBuilderAPI.Application\obj\Debug\net8.0\ReportBuilderAPI.Application.sourcelink.json

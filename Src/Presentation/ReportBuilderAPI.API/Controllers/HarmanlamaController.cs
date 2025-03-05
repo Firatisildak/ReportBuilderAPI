@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using ReportBuilderAPI.Application.Interfaces;
-using ReportBuilderAPI.Domain.Entities;
 
 namespace ReportBuilderAPI.API.Controllers
 {
@@ -11,13 +11,36 @@ namespace ReportBuilderAPI.API.Controllers
         private readonly IHarmanlamaRepository _harmanlamaRepository = harmanlamaRepository;
 
         [HttpGet("[action]")]
-        public async Task<IActionResult> GetByDate([FromQuery] DateTime startDate, [FromQuery] DateTime endDate)
+        public async Task<IActionResult> GetByDate([FromQuery] string startDate, [FromQuery] string endDate)
         {
-            var result = await _harmanlamaRepository.GetHarmanlamaByDateAsync(startDate, endDate);
+            if (!DateTime.TryParse(startDate, out DateTime start) || !DateTime.TryParse(endDate, out DateTime end))
+            {
+                return BadRequest("Geçerli bir tarih formatı giriniz. Örnek: yyyy-MM-dd HH:mm:ss");
+            }
+
+            var result = await _harmanlamaRepository.GetHarmanlamaByDateAsync(start, end);
             return Ok(result);
         }
+
+
         [HttpGet("[action]")]
-        public Task<IActionResult> GetAllKamyon() => Task.FromResult<IActionResult>(Ok(_harmanlamaRepository.GetAll()));
+        public async Task<IActionResult> GetAllHarmanlama()
+        {
+            try
+            {
+                var result = await _harmanlamaRepository.GetAll().ToListAsync();
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal Server Error: {ex.Message}");
+            }
+        }
+
+
+
+        [HttpGet("[action]")]
+        public async Task<IActionResult> GetByIdHarmanlama(int id) => Ok(await _harmanlamaRepository.GetById(id));
 
         [HttpGet("[action]")]
         public async Task<IActionResult> GetByReceteAndRevizyon([FromQuery] IList<int> receteler, [FromQuery] IList<int> revizyonlar, [FromQuery] DateTime startDate, [FromQuery] DateTime endDate)

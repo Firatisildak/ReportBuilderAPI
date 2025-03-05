@@ -9,4 +9,5 @@ public interface IHarmanlamaRepository
     Task<IList<int>> GetDistinctReceteIdsAsync(DateTime startDate, DateTime endDate);
     Task<IList<int>> GetDistinctRevizyonNosAsync(DateTime startDate, DateTime endDate, IList<int> receteler);
     IQueryable<Harmanlama> GetAll();
+    Task<Harmanlama> GetById(int id);
 }

@@ -15,3 +15,4 @@ C:\Users\Geotek\source\repos\ReportBuilderAPI\Src\Infrastructure\ReportBuilderAP
 C:\Users\Geotek\source\repos\ReportBuilderAPI\Src\Infrastructure\ReportBuilderAPI.Persistence\obj\Debug\net8.0\refint\ReportBuilderAPI.Persistence.dll
 C:\Users\Geotek\source\repos\ReportBuilderAPI\Src\Infrastructure\ReportBuilderAPI.Persistence\obj\Debug\net8.0\ReportBuilderAPI.Persistence.pdb
 C:\Users\Geotek\source\repos\ReportBuilderAPI\Src\Infrastructure\ReportBuilderAPI.Persistence\obj\Debug\net8.0\ref\ReportBuilderAPI.Persistence.dll
+C:\Users\Geotek\source\repos\ReportBuilderAPI\Src\Infrastructure\ReportBuilderAPI.Persistence\obj\Debug\net8.0\ReportBuilderAPI.Persistence.sourcelink.json
