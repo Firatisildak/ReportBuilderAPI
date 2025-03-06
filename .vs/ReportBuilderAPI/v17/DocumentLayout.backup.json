@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Geotek\\source\\repos\\ReportBuilderAPI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{AB45487E-6166-4737-B053-8DCE3DFBB1A4}|Src\\Infrastructure\\ReportBuilderAPI.Persistence\\ReportBuilderAPI.Persistence.csproj|c:\\users\\geotek\\source\\repos\\reportbuilderapi\\src\\infrastructure\\reportbuilderapi.persistence\\repositories\\harmanlama\\harmanlamarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB45487E-6166-4737-B053-8DCE3DFBB1A4}|Src\\Infrastructure\\ReportBuilderAPI.Persistence\\ReportBuilderAPI.Persistence.csproj|solutionrelative:src\\infrastructure\\reportbuilderapi.persistence\\repositories\\harmanlama\\harmanlamarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D5E29D7-5BAF-4157-BC7D-2393878ACB58}|Src\\Core\\ReportBuilderAPI.Application\\ReportBuilderAPI.Application.csproj|c:\\users\\geotek\\source\\repos\\reportbuilderapi\\src\\core\\reportbuilderapi.application\\dtos\\harmanlama\\harmanlamadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D5E29D7-5BAF-4157-BC7D-2393878ACB58}|Src\\Core\\ReportBuilderAPI.Application\\ReportBuilderAPI.Application.csproj|solutionrelative:src\\core\\reportbuilderapi.application\\dtos\\harmanlama\\harmanlamadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{70AA1A02-BF1B-4078-BAB2-DAA414AF1D50}|Src\\Core\\ReportBuilderAPI.Domain\\ReportBuilderAPI.Domain.csproj|c:\\users\\geotek\\source\\repos\\reportbuilderapi\\src\\core\\reportbuilderapi.domain\\entities\\harmanlama.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{70AA1A02-BF1B-4078-BAB2-DAA414AF1D50}|Src\\Core\\ReportBuilderAPI.Domain\\ReportBuilderAPI.Domain.csproj|solutionrelative:src\\core\\reportbuilderapi.domain\\entities\\harmanlama.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7DFA0E45-493D-45EA-A010-E223E306C764}|Src\\Presentation\\ReportBuilderAPI.API\\ReportBuilderAPI.API.csproj|c:\\users\\geotek\\source\\repos\\reportbuilderapi\\src\\presentation\\reportbuilderapi.api\\controllers\\harmanlamacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7DFA0E45-493D-45EA-A010-E223E306C764}|Src\\Presentation\\ReportBuilderAPI.API\\ReportBuilderAPI.API.csproj|solutionrelative:src\\presentation\\reportbuilderapi.api\\controllers\\harmanlamacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB45487E-6166-4737-B053-8DCE3DFBB1A4}|Src\\Infrastructure\\ReportBuilderAPI.Persistence\\ReportBuilderAPI.Persistence.csproj|c:\\users\\geotek\\source\\repos\\reportbuilderapi\\src\\infrastructure\\reportbuilderapi.persistence\\repositories\\harmanlama\\harmanlamarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB45487E-6166-4737-B053-8DCE3DFBB1A4}|Src\\Infrastructure\\ReportBuilderAPI.Persistence\\ReportBuilderAPI.Persistence.csproj|solutionrelative:src\\infrastructure\\reportbuilderapi.persistence\\repositories\\harmanlama\\harmanlamarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D5E29D7-5BAF-4157-BC7D-2393878ACB58}|Src\\Core\\ReportBuilderAPI.Application\\ReportBuilderAPI.Application.csproj|c:\\users\\geotek\\source\\repos\\reportbuilderapi\\src\\core\\reportbuilderapi.application\\interfaces\\harmanlama\\iharmanlamarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D5E29D7-5BAF-4157-BC7D-2393878ACB58}|Src\\Core\\ReportBuilderAPI.Application\\ReportBuilderAPI.Application.csproj|solutionrelative:src\\core\\reportbuilderapi.application\\interfaces\\harmanlama\\iharmanlamarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,58 +26,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "HarmanlamaDto.cs",
+              "DocumentMoniker": "C:\\Users\\Geotek\\source\\repos\\ReportBuilderAPI\\Src\\Core\\ReportBuilderAPI.Application\\DTOs\\Harmanlama\\HarmanlamaDto.cs",
+              "RelativeDocumentMoniker": "Src\\Core\\ReportBuilderAPI.Application\\DTOs\\Harmanlama\\HarmanlamaDto.cs",
+              "ToolTip": "C:\\Users\\Geotek\\source\\repos\\ReportBuilderAPI\\Src\\Core\\ReportBuilderAPI.Application\\DTOs\\Harmanlama\\HarmanlamaDto.cs",
+              "RelativeToolTip": "Src\\Core\\ReportBuilderAPI.Application\\DTOs\\Harmanlama\\HarmanlamaDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T06:14:49.249Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Harmanlama.cs",
               "DocumentMoniker": "C:\\Users\\Geotek\\source\\repos\\ReportBuilderAPI\\Src\\Core\\ReportBuilderAPI.Domain\\Entities\\Harmanlama.cs",
               "RelativeDocumentMoniker": "Src\\Core\\ReportBuilderAPI.Domain\\Entities\\Harmanlama.cs",
               "ToolTip": "C:\\Users\\Geotek\\source\\repos\\ReportBuilderAPI\\Src\\Core\\ReportBuilderAPI.Domain\\Entities\\Harmanlama.cs",
               "RelativeToolTip": "Src\\Core\\ReportBuilderAPI.Domain\\Entities\\Harmanlama.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-05T12:56:13.25Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "HarmanlamaRepository.cs",
               "DocumentMoniker": "C:\\Users\\Geotek\\source\\repos\\ReportBuilderAPI\\Src\\Infrastructure\\ReportBuilderAPI.Persistence\\Repositories\\Harmanlama\\HarmanlamaRepository.cs",
               "RelativeDocumentMoniker": "Src\\Infrastructure\\ReportBuilderAPI.Persistence\\Repositories\\Harmanlama\\HarmanlamaRepository.cs",
               "ToolTip": "C:\\Users\\Geotek\\source\\repos\\ReportBuilderAPI\\Src\\Infrastructure\\ReportBuilderAPI.Persistence\\Repositories\\Harmanlama\\HarmanlamaRepository.cs",
               "RelativeToolTip": "Src\\Infrastructure\\ReportBuilderAPI.Persistence\\Repositories\\Harmanlama\\HarmanlamaRepository.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACgAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAA8AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-04T11:34:40.972Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "HarmanlamaController.cs",
               "DocumentMoniker": "C:\\Users\\Geotek\\source\\repos\\ReportBuilderAPI\\Src\\Presentation\\ReportBuilderAPI.API\\Controllers\\HarmanlamaController.cs",
               "RelativeDocumentMoniker": "Src\\Presentation\\ReportBuilderAPI.API\\Controllers\\HarmanlamaController.cs",
               "ToolTip": "C:\\Users\\Geotek\\source\\repos\\ReportBuilderAPI\\Src\\Presentation\\ReportBuilderAPI.API\\Controllers\\HarmanlamaController.cs",
               "RelativeToolTip": "Src\\Presentation\\ReportBuilderAPI.API\\Controllers\\HarmanlamaController.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAQwBcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAgAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-05T11:18:35.255Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IHarmanlamaRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Geotek\\source\\repos\\ReportBuilderAPI\\Src\\Core\\ReportBuilderAPI.Application\\Interfaces\\Harmanlama\\IHarmanlamaRepository.cs",
-              "RelativeDocumentMoniker": "Src\\Core\\ReportBuilderAPI.Application\\Interfaces\\Harmanlama\\IHarmanlamaRepository.cs",
-              "ToolTip": "C:\\Users\\Geotek\\source\\repos\\ReportBuilderAPI\\Src\\Core\\ReportBuilderAPI.Application\\Interfaces\\Harmanlama\\IHarmanlamaRepository.cs",
-              "RelativeToolTip": "Src\\Core\\ReportBuilderAPI.Application\\Interfaces\\Harmanlama\\IHarmanlamaRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T12:33:31.906Z",
               "EditorCaption": ""
             }
           ]

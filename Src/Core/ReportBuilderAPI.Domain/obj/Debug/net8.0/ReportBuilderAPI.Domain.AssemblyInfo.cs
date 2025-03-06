@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ReportBuilderAPI.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3e1ae2503410226d21e11b6a432c6ec05a188ee8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+504f3b9f15d4103a0b9ea743efe2a96165abdd45")]
 [assembly: System.Reflection.AssemblyProductAttribute("ReportBuilderAPI.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ReportBuilderAPI.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
