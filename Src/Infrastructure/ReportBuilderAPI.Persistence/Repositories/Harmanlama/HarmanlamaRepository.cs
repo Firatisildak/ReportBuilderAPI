@@ -24,8 +24,6 @@ namespace ReportBuilderAPI.Persistence.Repositories
                 .ToListAsync();
         }
 
-
-
         public async Task<IList<Harmanlama>> GetHarmanlamaByReceteAndRevizyonAsync(IList<int> receteler, IList<int> revizyonlar, DateTime startDate, DateTime endDate)
         {
             return await context.std_tbl_rapor_harmanlama

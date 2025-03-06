@@ -1,4 +1,7 @@
 is_global = true
+build_property.MudDebugAnalyzer = 
+build_property.MudAllowedAttributePattern = 
+build_property.MudAllowedAttributeList = 
 build_property.TargetFramework = net8.0
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = true
@@ -34,6 +37,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Geotek/source/repos/ReportBuilderAPI/Src/WebUI/ReportBuilderAPI.Client/Components/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Geotek/source/repos/ReportBuilderAPI/Src/WebUI/ReportBuilderAPI.Client/Components/Pages/Orallar.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xPcmFsbGFyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Geotek/source/repos/ReportBuilderAPI/Src/WebUI/ReportBuilderAPI.Client/Components/Pages/Weather.razor]

@@ -1,0 +1,76 @@
+﻿@page "/orallar-chart"
+@inject HttpClient Http
+@using MudBlazor
+@rendermode InteractiveServer
+
+<MudCard>
+    <MudCardContent>
+        <MudGrid>
+            <MudItem xs="12" md="4">
+                <MudDatePicker Label="Başlangıç Tarihi" @bind-Date="startDate" Format="yyyy-MM-dd HH:mm:ss" PickerVariant="PickerVariant.Dialog"></MudDatePicker>
+            </MudItem>
+            <MudItem xs="12" md="4">
+                <MudDatePicker Label="Bitiş Tarihi" @bind-Date="endDate" Format="yyyy-MM-dd HH:mm:ss" PickerVariant="PickerVariant.Dialog"></MudDatePicker>
+            </MudItem>
+            <MudItem xs="12" md="4">
+                <MudButton OnClick="GetHarmanlamaData" Variant="Variant.Filled" Color="Color.Primary">Verileri Getir</MudButton>
+            </MudItem>
+        </MudGrid>
+    </MudCardContent>
+</MudCard>
+
+<MudTable Items="@harmanlamaList" Dense>
+    <HeaderContent>
+        <MudTh>Adı</MudTh>
+        <MudTh>Alinacak</MudTh>
+        <MudTh>Alinan</MudTh>
+    </HeaderContent>
+    <RowTemplate Context="item">
+        <MudTd>@item.ReceteAdi</MudTd>
+        <MudTd>@item.Alinacak</MudTd>
+        <MudTd>@item.Alinan</MudTd>
+    </RowTemplate>
+</MudTable>
+
+@code {
+    private DateTime? startDate;
+    private DateTime? endDate;
+    private List<HarmanlamaDto> harmanlamaList = new();
+
+    private async Task GetHarmanlamaData()
+    {
+        if (startDate == null || endDate == null)
+        {
+            return;
+        }
+
+        try
+        {
+            string url = $"http://localhost:5198/api/Harmanlama/GetByDate?startDate={startDate:O}&endDate={endDate:O}";
+            Console.WriteLine($"API çağrısı: {url}");
+
+            var response = await Http.GetAsync(url);
+
+            if (response.IsSuccessStatusCode)
+            {
+                harmanlamaList = await response.Content.ReadFromJsonAsync<List<HarmanlamaDto>>() ?? new();
+            }
+            else
+            {
+                Console.WriteLine($"API başarısız: {response.StatusCode}");
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Hata oluştu: {ex.Message}");
+        }
+    }
+
+
+    public class HarmanlamaDto
+    {
+        public string ReceteAdi { get; set; }
+        public decimal Alinacak { get; set; }
+        public decimal Alinan { get; set; }
+    }
+}
