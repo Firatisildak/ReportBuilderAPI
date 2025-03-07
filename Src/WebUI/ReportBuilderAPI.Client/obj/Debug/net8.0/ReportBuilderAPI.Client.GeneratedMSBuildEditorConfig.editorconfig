@@ -43,6 +43,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xPcmFsbGFyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Geotek/source/repos/ReportBuilderAPI/Src/WebUI/ReportBuilderAPI.Client/Components/Pages/OrallarBarChart.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xPcmFsbGFyQmFyQ2hhcnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Geotek/source/repos/ReportBuilderAPI/Src/WebUI/ReportBuilderAPI.Client/Components/Pages/Weather.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xXZWF0aGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 

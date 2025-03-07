@@ -1,6 +1,7 @@
-﻿@page "/orallar-chart"
+﻿@page "/orallar-deneme"
 @inject HttpClient Http
 @using MudBlazor
+@using ReportBuilderAPI.Client.Components.Models
 @rendermode InteractiveServer
 
 <MudCard>
@@ -13,7 +14,7 @@
                 <MudDatePicker Label="Bitiş Tarihi" @bind-Date="endDate" Format="yyyy-MM-dd HH:mm:ss" PickerVariant="PickerVariant.Dialog"></MudDatePicker>
             </MudItem>
             <MudItem xs="12" md="4">
-                <MudButton OnClick="GetHarmanlamaData" Variant="Variant.Filled" Color="Color.Primary">Verileri Getir</MudButton>
+                <MudButton OnClick="GetHarmanlamaData" Variant="Variant.Filled" Color="MudBlazor.Color.Primary">Verileri Getir</MudButton>
             </MudItem>
         </MudGrid>
     </MudCardContent>
@@ -64,13 +65,5 @@
         {
             Console.WriteLine($"Hata oluştu: {ex.Message}");
         }
-    }
-
-
-    public class HarmanlamaDto
-    {
-        public string ReceteAdi { get; set; }
-        public decimal Alinacak { get; set; }
-        public decimal Alinan { get; set; }
     }
 }

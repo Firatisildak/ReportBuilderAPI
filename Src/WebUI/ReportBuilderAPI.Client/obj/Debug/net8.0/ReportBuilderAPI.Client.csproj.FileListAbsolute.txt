@@ -47,3 +47,8 @@ C:\Users\Geotek\source\repos\ReportBuilderAPI\Src\WebUI\ReportBuilderAPI.Client\
 C:\Users\Geotek\source\repos\ReportBuilderAPI\Src\WebUI\ReportBuilderAPI.Client\bin\Debug\net8.0\MudBlazor.dll
 C:\Users\Geotek\source\repos\ReportBuilderAPI\Src\WebUI\ReportBuilderAPI.Client\obj\Debug\net8.0\ReportBuilderAPI.Client.csproj.AssemblyReference.cache
 C:\Users\Geotek\source\repos\ReportBuilderAPI\Src\WebUI\ReportBuilderAPI.Client\obj\Debug\net8.0\ReportBu.2348870C.Up2Date
+C:\Users\Geotek\source\repos\ReportBuilderAPI\Src\WebUI\ReportBuilderAPI.Client\bin\Debug\net8.0\Blazor-ApexCharts.dll
+C:\Users\Geotek\source\repos\ReportBuilderAPI\Src\WebUI\ReportBuilderAPI.Client\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.dll
+C:\Users\Geotek\source\repos\ReportBuilderAPI\Src\WebUI\ReportBuilderAPI.Client\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\Users\Geotek\source\repos\ReportBuilderAPI\Src\WebUI\ReportBuilderAPI.Client\bin\Debug\net8.0\Microsoft.Extensions.Http.dll
+C:\Users\Geotek\source\repos\ReportBuilderAPI\Src\WebUI\ReportBuilderAPI.Client\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll

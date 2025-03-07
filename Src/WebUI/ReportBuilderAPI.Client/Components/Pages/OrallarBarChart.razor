@@ -1,0 +1,89 @@
+﻿@page "/orallarBar-chart"
+@inject HttpClient Http
+@using MudBlazor
+@using ReportBuilderAPI.Client.Components.Models
+@using ApexCharts
+@rendermode InteractiveServer
+
+<MudCard>
+    <MudCardContent>
+        <MudGrid>
+            <MudItem xs="12" md="4">
+                <MudDatePicker Label="Başlangıç Tarihi" @bind-Date="startDate" Format="yyyy-MM-dd HH:mm:ss" PickerVariant="PickerVariant.Dialog"></MudDatePicker>
+            </MudItem>
+            <MudItem xs="12" md="4">
+                <MudDatePicker Label="Bitiş Tarihi" @bind-Date="endDate" Format="yyyy-MM-dd HH:mm:ss" PickerVariant="PickerVariant.Dialog"></MudDatePicker>
+            </MudItem>
+            <MudItem xs="12" md="4">
+                <MudButton OnClick="GetHarmanlamaData" Variant="Variant.Filled" Color="MudBlazor.Color.Primary">Verileri Getir</MudButton>
+            </MudItem>
+        </MudGrid>
+    </MudCardContent>
+
+    @if (harmanlamaList.Any())
+    {
+        <ApexChart TItem="HarmanlamaDto" Title="Harmanlama Verileri" Height="350">
+            <ApexChartSeries TItem="HarmanlamaDto" Name="Alinacak" Data="harmanlamaList"
+                             XValue="@(new Func<HarmanlamaDto, object>(item => item.ReceteAdi))"
+                             YAggregate="@(new Func<IEnumerable<HarmanlamaDto>, double>(items => items.Sum(i => (double)(i.Alinacak ?? 0))))"
+                             SeriesType="SeriesType.Bar"
+                             Color="#E51C15" />
+
+            <ApexChartSeries TItem="HarmanlamaDto" Name="Alinan" Data="harmanlamaList"
+                             XValue="@(new Func<HarmanlamaDto, object>(item => item.ReceteAdi))"
+                             YAggregate="@(new Func<IEnumerable<HarmanlamaDto>, double>(items => items.Sum(i => (double)(i.Alinan ?? 0))))"
+                             SeriesType="SeriesType.Bar"
+                             Color="#145A32" />
+        </ApexChart>
+    }
+    else
+    {
+        <MudText>No data available for the selected date range.</MudText>
+    }
+</MudCard>
+
+@code {
+    private DateTime? startDate;
+    private DateTime? endDate;
+    private List<HarmanlamaDto> harmanlamaList = new();
+
+    private async Task GetHarmanlamaData()
+    {
+        if (startDate == null || endDate == null)
+        {
+            return;
+        }
+
+        try
+        {
+            string url = $"http://localhost:5198/api/Harmanlama/GetByDate?startDate={startDate:O}&endDate={endDate:O}";
+            Console.WriteLine($"API çağrısı: {url}");
+
+            var response = await Http.GetAsync(url);
+
+            if (response.IsSuccessStatusCode)
+            {
+                harmanlamaList = await response.Content.ReadFromJsonAsync<List<HarmanlamaDto>>() ?? new();
+
+                // Veri sayfası başına sınırlama (ilk 100 öğe)
+                harmanlamaList = harmanlamaList.Take(10).ToList();
+
+                Console.WriteLine("Veriler alındı:");
+                Console.WriteLine(harmanlamaList.Count); // Verilerin sayısını kontrol et
+                if (harmanlamaList.Any())
+                {
+                    Console.WriteLine("Örnek veri:");
+                    Console.WriteLine($"ReceteAdi: {harmanlamaList.FirstOrDefault()?.ReceteAdi}");
+                }
+            }
+            else
+            {
+                Console.WriteLine($"API başarısız: {response.StatusCode}");
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Hata oluştu: {ex.Message}");
+        }
+    }
+}
