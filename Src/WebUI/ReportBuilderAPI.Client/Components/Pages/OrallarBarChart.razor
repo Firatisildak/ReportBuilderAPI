@@ -9,43 +9,54 @@
     <MudCardContent>
         <MudGrid>
             <MudItem xs="12" md="4">
-                <MudDatePicker Label="Başlangıç Tarihi" @bind-Date="startDate" Format="yyyy-MM-dd HH:mm:ss" PickerVariant="PickerVariant.Dialog"></MudDatePicker>
+                <MudDatePicker Label="Başlangıç Tarihi" @bind-Date="startDate" Format="yyyy-MM-dd" PickerVariant="PickerVariant.Dialog"></MudDatePicker>
             </MudItem>
             <MudItem xs="12" md="4">
-                <MudDatePicker Label="Bitiş Tarihi" @bind-Date="endDate" Format="yyyy-MM-dd HH:mm:ss" PickerVariant="PickerVariant.Dialog"></MudDatePicker>
+                <MudDatePicker Label="Bitiş Tarihi" @bind-Date="endDate" Format="yyyy-MM-dd" PickerVariant="PickerVariant.Dialog"></MudDatePicker>
             </MudItem>
             <MudItem xs="12" md="4">
                 <MudButton OnClick="GetHarmanlamaData" Variant="Variant.Filled" Color="MudBlazor.Color.Primary">Verileri Getir</MudButton>
             </MudItem>
         </MudGrid>
     </MudCardContent>
-
-    @if (harmanlamaList.Any())
-    {
-        <ApexChart TItem="HarmanlamaDto" Title="Harmanlama Verileri" Height="350">
-            <ApexChartSeries TItem="HarmanlamaDto" Name="Alinacak" Data="harmanlamaList"
-                             XValue="@(new Func<HarmanlamaDto, object>(item => item.ReceteAdi))"
-                             YAggregate="@(new Func<IEnumerable<HarmanlamaDto>, double>(items => items.Sum(i => (double)(i.Alinacak ?? 0))))"
-                             SeriesType="SeriesType.Bar"
-                             Color="#E51C15" />
-
-            <ApexChartSeries TItem="HarmanlamaDto" Name="Alinan" Data="harmanlamaList"
-                             XValue="@(new Func<HarmanlamaDto, object>(item => item.ReceteAdi))"
-                             YAggregate="@(new Func<IEnumerable<HarmanlamaDto>, double>(items => items.Sum(i => (double)(i.Alinan ?? 0))))"
-                             SeriesType="SeriesType.Bar"
-                             Color="#145A32" />
-        </ApexChart>
-    }
-    else
-    {
-        <MudText>No data available for the selected date range.</MudText>
-    }
 </MudCard>
+<MudCard>
+    <!-- ApexChart with Data -->
+    <MudCardContent>
+        <ApexChart @ref="chart" TItem="HarmanlamaDto" Title="Harmanlama Verileri" Height="450">
+            <ApexPointSeries TItem="HarmanlamaDto"
+                             Items="chartData"
+                             Name="Alınan"
+                             XValue="@(e => e.ReceteAdi)"
+                             YValue="@(e => e.Alinan)"
+                             SeriesType="SeriesType.Bar"
+                             DataPointMutator="SetGoals"
+                             Color="#E51C15" />
+        </ApexChart>
+    </MudCardContent>
+</MudCard>
+
+<!-- Table for Data Display -->
+<MudTable Items="@harmanlamaList" Dense>
+    <HeaderContent>
+        <MudTh>Adı</MudTh>
+        <MudTh>Alinacak</MudTh>
+        <MudTh>Alinan</MudTh>
+    </HeaderContent>
+    <RowTemplate Context="item">
+        <MudTd>@item.ReceteAdi</MudTd>
+        <MudTd>@item.Alinacak</MudTd>
+        <MudTd>@item.Alinan</MudTd>
+    </RowTemplate>
+</MudTable>
 
 @code {
     private DateTime? startDate;
     private DateTime? endDate;
     private List<HarmanlamaDto> harmanlamaList = new();
+    private List<HarmanlamaDto> chartData = new();
+
+    private ApexChart<HarmanlamaDto> chart = new();
 
     private async Task GetHarmanlamaData()
     {
@@ -64,17 +75,11 @@
             if (response.IsSuccessStatusCode)
             {
                 harmanlamaList = await response.Content.ReadFromJsonAsync<List<HarmanlamaDto>>() ?? new();
+                chartData = harmanlamaList; // Filtreleme API tarafından yapıldığı için, veriyi direkt olarak alıyoruz.
 
-                // Veri sayfası başına sınırlama (ilk 100 öğe)
-                harmanlamaList = harmanlamaList.Take(10).ToList();
+                StateHasChanged(); // Grafiği güncelle
 
-                Console.WriteLine("Veriler alındı:");
-                Console.WriteLine(harmanlamaList.Count); // Verilerin sayısını kontrol et
-                if (harmanlamaList.Any())
-                {
-                    Console.WriteLine("Örnek veri:");
-                    Console.WriteLine($"ReceteAdi: {harmanlamaList.FirstOrDefault()?.ReceteAdi}");
-                }
+                await chart.UpdateSeriesAsync();
             }
             else
             {
@@ -86,4 +91,25 @@
             Console.WriteLine($"Hata oluştu: {ex.Message}");
         }
     }
+
+    private void SetGoals(DataPoint<HarmanlamaDto> datapoint)
+    {
+        datapoint.Goals = new();
+        var goal = new DataPointGoal { Name = "Alınacak" };
+        datapoint.Goals.Add(goal);
+
+        // Alınan değeri de eşleştirerek doğru veriyi buluyoruz.
+        var relatedData = chartData.FirstOrDefault(data =>
+            string.Equals(data.ReceteAdi, datapoint.X as string, StringComparison.OrdinalIgnoreCase) &&
+            data.Alinan == datapoint.Y);
+
+        if (relatedData != null)
+        {
+            goal.StrokeColor = "#145A32"; // Yeşil renk
+            goal.StrokeHeight = 2;  // Çizginin kalınlığı
+            goal.StrokeLineCap = LineCap.Round; // Çizginin uçları yuvarlatılmış olacak
+            goal.Value = relatedData.Alinacak ?? 0; // Doğru "Alınacak" değeri atanıyor
+        }
+    }
+
 }
