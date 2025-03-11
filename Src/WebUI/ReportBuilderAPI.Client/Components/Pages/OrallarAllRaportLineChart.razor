@@ -1,0 +1,139 @@
+﻿@page "/orallarAllRaportLine-chart"
+@inject HttpClient Http
+@using MudBlazor
+@using ApexCharts
+@using ReportBuilderAPI.Client.Components.Models
+
+<MudCard>
+    <MudCardContent>
+        <MudGrid>
+            <MudItem xs="12" md="4">
+                <MudDatePicker Label="Başlangıç Tarihi" @bind-Date="startDate" DateFormat="yyyy-MM-dd" PickerVariant="PickerVariant.Dialog"></MudDatePicker>
+            </MudItem>
+            <MudItem xs="12" md="4">
+                <MudDatePicker Label="Bitiş Tarihi" @bind-Date="endDate" DateFormat="yyyy-MM-dd" PickerVariant="PickerVariant.Dialog"></MudDatePicker>
+            </MudItem>
+            <MudItem xs="12" md="4">
+                <MudButton OnClick="GetHarmanlamaData" Variant="Variant.Filled" Color="MudBlazor.Color.Primary">Verileri Getir</MudButton>
+            </MudItem>
+        </MudGrid>
+    </MudCardContent>
+</MudCard>
+
+<MudCard>
+    <MudCardContent>
+        <ApexChart TItem="HarmanlamaDto"
+                   Title="Harmanlama Verileri"
+                   @ref="chart"
+                   Height="450"
+                   Options="@options">
+
+            <ApexPointSeries TItem="HarmanlamaDto"
+                             Items="chartData"
+                             Name="Alınan"
+                             SeriesType="SeriesType.Line"
+                             XValue="@(e => e.ReceteAdi)"
+                             YAggregate="@(e => e.Sum(e=>e.Alinan))"
+                             ShowDataLabels />
+
+            <ApexPointSeries TItem="HarmanlamaDto"
+                             Items="chartData"
+                             Name="Alınacak"
+                             SeriesType="SeriesType.Line"
+                             XValue="@(e => e.ReceteAdi)"
+                             YAggregate="@(e => e.Sum(e=>e.Alinacak))"
+                             ShowDataLabels />
+        </ApexChart>
+    </MudCardContent>
+</MudCard>
+
+ 
+@code {
+    private DateTime? startDate;
+    private DateTime? endDate;
+    private List<HarmanlamaDto> harmanlamaList = new();
+    private List<HarmanlamaDto> chartData = new();
+    private ApexChart<HarmanlamaDto> chart; // @ref ile bağlanıyor
+    private ApexChartOptions<HarmanlamaDto> options;
+
+    protected override void OnInitialized()
+    {
+        options = new ApexChartOptions<HarmanlamaDto>
+            {
+                Chart = new Chart
+                {
+                    Toolbar = new Toolbar { Show = false },
+                    DropShadow = new DropShadow
+                    {
+                        Enabled = true,
+                        Color = "#000",
+                        Top = 18,
+                        Left = 7,
+                        Blur = 10,
+                        Opacity = 0.2d
+                    }
+                },
+                DataLabels = new ApexCharts.DataLabels { OffsetY = -6d },
+                Grid = new Grid
+                {
+                    BorderColor = "#e7e7e7",
+                    Row = new GridRow
+                    {
+                        Colors = new List<string> { "#f3f3f3", "transparent" },
+                        Opacity = 0.5d
+                    }
+                },
+                Colors = new List<string> { "#77B6EA", "#545454" },
+                Markers = new Markers
+                {
+                    Shape = ShapeEnum.Circle,
+                    Size = 5,
+                    FillOpacity = new Opacity(0.8d)
+                },
+                Stroke = new Stroke { Curve = Curve.Smooth },
+                Legend = new Legend
+                {
+                    Position = LegendPosition.Top,
+                    HorizontalAlign = ApexCharts.Align.Right,
+                    Floating = true,
+                    OffsetX = -5,
+                    OffsetY = -25
+                }
+            };
+    }
+
+    private async Task GetHarmanlamaData()
+    {
+        if (startDate == null || endDate == null)
+        {
+            return;
+        }
+        try
+        {
+            string url = $"http://localhost:5198/api/Harmanlama/GetByDate?startDate={startDate:O}&endDate={endDate:O}";
+            Console.WriteLine($"API çağrısı: {url}");
+
+            var response = await Http.GetAsync(url);
+            if (response.IsSuccessStatusCode)
+            {
+                harmanlamaList = await response.Content.ReadFromJsonAsync<List<HarmanlamaDto>>() ?? new();
+                chartData = harmanlamaList.ToList(); // Yeni liste olarak atama yapıldı
+
+                StateHasChanged(); // UI güncellenmesi için
+                if (chart != null)
+                {
+                    await chart.UpdateSeriesAsync(); // Grafiği güncelle
+                }
+            }
+            else
+            {
+                Console.WriteLine($"API başarısız: {response.StatusCode}");
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Hata oluştu: {ex.Message}");
+        }
+    }
+}
+

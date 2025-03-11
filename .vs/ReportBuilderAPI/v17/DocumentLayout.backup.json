@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Geotek\\source\\repos\\ReportBuilderAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CB4F1C45-0EC9-4E37-AA80-F293AC391F2C}|Src\\WebUI\\ReportBuilderAPI.Client\\ReportBuilderAPI.Client.csproj|c:\\users\\geotek\\source\\repos\\reportbuilderapi\\src\\webui\\reportbuilderapi.client\\components\\pages\\orallarbarchart.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CB4F1C45-0EC9-4E37-AA80-F293AC391F2C}|Src\\WebUI\\ReportBuilderAPI.Client\\ReportBuilderAPI.Client.csproj|solutionrelative:src\\webui\\reportbuilderapi.client\\components\\pages\\orallarbarchart.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{CB4F1C45-0EC9-4E37-AA80-F293AC391F2C}|Src\\WebUI\\ReportBuilderAPI.Client\\ReportBuilderAPI.Client.csproj|c:\\users\\geotek\\source\\repos\\reportbuilderapi\\src\\webui\\reportbuilderapi.client\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB4F1C45-0EC9-4E37-AA80-F293AC391F2C}|Src\\WebUI\\ReportBuilderAPI.Client\\ReportBuilderAPI.Client.csproj|solutionrelative:src\\webui\\reportbuilderapi.client\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB4F1C45-0EC9-4E37-AA80-F293AC391F2C}|Src\\WebUI\\ReportBuilderAPI.Client\\ReportBuilderAPI.Client.csproj|c:\\users\\geotek\\source\\repos\\reportbuilderapi\\src\\webui\\reportbuilderapi.client\\components\\models\\harmanlamadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB4F1C45-0EC9-4E37-AA80-F293AC391F2C}|Src\\WebUI\\ReportBuilderAPI.Client\\ReportBuilderAPI.Client.csproj|solutionrelative:src\\webui\\reportbuilderapi.client\\components\\models\\harmanlamadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CB4F1C45-0EC9-4E37-AA80-F293AC391F2C}|Src\\WebUI\\ReportBuilderAPI.Client\\ReportBuilderAPI.Client.csproj|c:\\users\\geotek\\source\\repos\\reportbuilderapi\\src\\webui\\reportbuilderapi.client\\components\\pages\\orallarallraportlinechart.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB4F1C45-0EC9-4E37-AA80-F293AC391F2C}|Src\\WebUI\\ReportBuilderAPI.Client\\ReportBuilderAPI.Client.csproj|solutionrelative:src\\webui\\reportbuilderapi.client\\components\\pages\\orallarallraportlinechart.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB45487E-6166-4737-B053-8DCE3DFBB1A4}|Src\\Infrastructure\\ReportBuilderAPI.Persistence\\ReportBuilderAPI.Persistence.csproj|c:\\users\\geotek\\source\\repos\\reportbuilderapi\\src\\infrastructure\\reportbuilderapi.persistence\\repositories\\harmanlama\\harmanlamarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB45487E-6166-4737-B053-8DCE3DFBB1A4}|Src\\Infrastructure\\ReportBuilderAPI.Persistence\\ReportBuilderAPI.Persistence.csproj|solutionrelative:src\\infrastructure\\reportbuilderapi.persistence\\repositories\\harmanlama\\harmanlamarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CB4F1C45-0EC9-4E37-AA80-F293AC391F2C}|Src\\WebUI\\ReportBuilderAPI.Client\\ReportBuilderAPI.Client.csproj|c:\\users\\geotek\\source\\repos\\reportbuilderapi\\src\\webui\\reportbuilderapi.client\\components\\pages\\orallarallraportbarchart.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB4F1C45-0EC9-4E37-AA80-F293AC391F2C}|Src\\WebUI\\ReportBuilderAPI.Client\\ReportBuilderAPI.Client.csproj|solutionrelative:src\\webui\\reportbuilderapi.client\\components\\pages\\orallarallraportbarchart.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +22,51 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "HarmanlamaRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Geotek\\source\\repos\\ReportBuilderAPI\\Src\\Infrastructure\\ReportBuilderAPI.Persistence\\Repositories\\Harmanlama\\HarmanlamaRepository.cs",
-              "RelativeDocumentMoniker": "Src\\Infrastructure\\ReportBuilderAPI.Persistence\\Repositories\\Harmanlama\\HarmanlamaRepository.cs",
-              "ToolTip": "C:\\Users\\Geotek\\source\\repos\\ReportBuilderAPI\\Src\\Infrastructure\\ReportBuilderAPI.Persistence\\Repositories\\Harmanlama\\HarmanlamaRepository.cs",
-              "RelativeToolTip": "Src\\Infrastructure\\ReportBuilderAPI.Persistence\\Repositories\\Harmanlama\\HarmanlamaRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T11:10:35.401Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "HarmanlamaDto.cs",
-              "DocumentMoniker": "C:\\Users\\Geotek\\source\\repos\\ReportBuilderAPI\\Src\\WebUI\\ReportBuilderAPI.Client\\Components\\Models\\HarmanlamaDto.cs",
-              "RelativeDocumentMoniker": "Src\\WebUI\\ReportBuilderAPI.Client\\Components\\Models\\HarmanlamaDto.cs",
-              "ToolTip": "C:\\Users\\Geotek\\source\\repos\\ReportBuilderAPI\\Src\\WebUI\\ReportBuilderAPI.Client\\Components\\Models\\HarmanlamaDto.cs",
-              "RelativeToolTip": "Src\\WebUI\\ReportBuilderAPI.Client\\Components\\Models\\HarmanlamaDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T07:00:45.379Z",
+              "Title": "OrallarAllRaportLineChart.razor",
+              "DocumentMoniker": "C:\\Users\\Geotek\\source\\repos\\ReportBuilderAPI\\Src\\WebUI\\ReportBuilderAPI.Client\\Components\\Pages\\OrallarAllRaportLineChart.razor",
+              "RelativeDocumentMoniker": "Src\\WebUI\\ReportBuilderAPI.Client\\Components\\Pages\\OrallarAllRaportLineChart.razor",
+              "ToolTip": "C:\\Users\\Geotek\\source\\repos\\ReportBuilderAPI\\Src\\WebUI\\ReportBuilderAPI.Client\\Components\\Pages\\OrallarAllRaportLineChart.razor",
+              "RelativeToolTip": "Src\\WebUI\\ReportBuilderAPI.Client\\Components\\Pages\\OrallarAllRaportLineChart.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-11T11:23:22.816Z",
               "EditorCaption": ""
-            },
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "OrallarBarChart.razor",
-              "DocumentMoniker": "C:\\Users\\Geotek\\source\\repos\\ReportBuilderAPI\\Src\\WebUI\\ReportBuilderAPI.Client\\Components\\Pages\\OrallarBarChart.razor",
-              "RelativeDocumentMoniker": "Src\\WebUI\\ReportBuilderAPI.Client\\Components\\Pages\\OrallarBarChart.razor",
-              "ToolTip": "C:\\Users\\Geotek\\source\\repos\\ReportBuilderAPI\\Src\\WebUI\\ReportBuilderAPI.Client\\Components\\Pages\\OrallarBarChart.razor",
-              "RelativeToolTip": "Src\\WebUI\\ReportBuilderAPI.Client\\Components\\Pages\\OrallarBarChart.razor",
-              "ViewState": "AgIAABEAAAAAAAAAAAAIwDAAAAAjAAAAAAAAAA==",
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\Geotek\\source\\repos\\ReportBuilderAPI\\Src\\WebUI\\ReportBuilderAPI.Client\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "Src\\WebUI\\ReportBuilderAPI.Client\\Components\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\Geotek\\source\\repos\\ReportBuilderAPI\\Src\\WebUI\\ReportBuilderAPI.Client\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "Src\\WebUI\\ReportBuilderAPI.Client\\Components\\Layout\\NavMenu.razor",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAmwBYAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-10T06:29:16.279Z",
+              "WhenOpened": "2025-03-11T11:39:28.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrallarAllRaportBarChart.razor",
+              "DocumentMoniker": "C:\\Users\\Geotek\\source\\repos\\ReportBuilderAPI\\Src\\WebUI\\ReportBuilderAPI.Client\\Components\\Pages\\OrallarAllRaportBarChart.razor",
+              "RelativeDocumentMoniker": "Src\\WebUI\\ReportBuilderAPI.Client\\Components\\Pages\\OrallarAllRaportBarChart.razor",
+              "ToolTip": "C:\\Users\\Geotek\\source\\repos\\ReportBuilderAPI\\Src\\WebUI\\ReportBuilderAPI.Client\\Components\\Pages\\OrallarAllRaportBarChart.razor",
+              "RelativeToolTip": "Src\\WebUI\\ReportBuilderAPI.Client\\Components\\Pages\\OrallarAllRaportBarChart.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-11T10:35:06.08Z",
               "EditorCaption": ""
             }
           ]

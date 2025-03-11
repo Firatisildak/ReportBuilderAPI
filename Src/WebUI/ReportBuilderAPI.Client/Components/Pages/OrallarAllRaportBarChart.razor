@@ -1,9 +1,8 @@
-﻿@page "/orallarBar-chart"
+﻿@page "/orallarAllRaportBar-chart"
 @inject HttpClient Http
 @using MudBlazor
 @using ReportBuilderAPI.Client.Components.Models
 @using ApexCharts
-@rendermode InteractiveServer
 
 <MudCard>
     <MudCardContent>
@@ -28,7 +27,7 @@
                              Items="chartData"
                              Name="Alınan"
                              XValue="@(e => e.ReceteAdi)"
-                             YValue="@(e => e.Alinan)"
+                             YAggregate="@(e => e.Sum(e=>e.Alinan))"
                              SeriesType="SeriesType.Bar"
                              DataPointMutator="SetGoals"
                              Color="#E51C15" />
@@ -36,7 +35,7 @@
     </MudCardContent>
 </MudCard>
 
-<!-- Table for Data Display -->
+@* <!-- Table for Data Display -->
 <MudTable Items="@harmanlamaList" Dense>
     <HeaderContent>
         <MudTh>Adı</MudTh>
@@ -48,7 +47,7 @@
         <MudTd>@item.Alinacak</MudTd>
         <MudTd>@item.Alinan</MudTd>
     </RowTemplate>
-</MudTable>
+</MudTable> *@
 
 @code {
     private DateTime? startDate;
@@ -91,25 +90,22 @@
             Console.WriteLine($"Hata oluştu: {ex.Message}");
         }
     }
-
     private void SetGoals(DataPoint<HarmanlamaDto> datapoint)
     {
         datapoint.Goals = new();
         var goal = new DataPointGoal { Name = "Alınacak" };
         datapoint.Goals.Add(goal);
 
-        // Alınan değeri de eşleştirerek doğru veriyi buluyoruz.
-        var relatedData = chartData.FirstOrDefault(data =>
-            string.Equals(data.ReceteAdi, datapoint.X as string, StringComparison.OrdinalIgnoreCase) &&
-            data.Alinan == datapoint.Y);
+        // Aynı reçete adına sahip olan tüm öğelerin "Alinacak" değerlerinin toplamını al
+        var totalAlinacak = chartData
+            .Where(data => string.Equals(data.ReceteAdi, datapoint.X as string, StringComparison.OrdinalIgnoreCase))
+            .Sum(data => data.Alinacak ?? 0);
 
-        if (relatedData != null)
-        {
-            goal.StrokeColor = "#145A32"; // Yeşil renk
-            goal.StrokeHeight = 2;  // Çizginin kalınlığı
-            goal.StrokeLineCap = LineCap.Round; // Çizginin uçları yuvarlatılmış olacak
-            goal.Value = relatedData.Alinacak ?? 0; // Doğru "Alınacak" değeri atanıyor
-        }
+        goal.StrokeColor = "#145A32"; // Yeşil renk
+        goal.StrokeHeight = 3;  // Çizginin kalınlığı
+        goal.StrokeLineCap = LineCap.Round; // Çizginin uçları yuvarlatılmış olacak
+        goal.Value = totalAlinacak; // Toplam "Alinacak" değeri atanıyor
     }
+
 
 }
