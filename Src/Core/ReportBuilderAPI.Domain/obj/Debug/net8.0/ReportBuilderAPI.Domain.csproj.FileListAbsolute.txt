@@ -10,3 +10,15 @@ C:\Users\Geotek\source\repos\ReportBuilderAPI\Src\Core\ReportBuilderAPI.Domain\o
 C:\Users\Geotek\source\repos\ReportBuilderAPI\Src\Core\ReportBuilderAPI.Domain\obj\Debug\net8.0\ReportBuilderAPI.Domain.pdb
 C:\Users\Geotek\source\repos\ReportBuilderAPI\Src\Core\ReportBuilderAPI.Domain\obj\Debug\net8.0\ref\ReportBuilderAPI.Domain.dll
 C:\Users\Geotek\source\repos\ReportBuilderAPI\Src\Core\ReportBuilderAPI.Domain\obj\Debug\net8.0\ReportBuilderAPI.Domain.sourcelink.json
+C:\Users\firat\source\repos\ReportBuilderAPI\Src\Core\ReportBuilderAPI.Domain\bin\Debug\net8.0\ReportBuilderAPI.Domain.deps.json
+C:\Users\firat\source\repos\ReportBuilderAPI\Src\Core\ReportBuilderAPI.Domain\bin\Debug\net8.0\ReportBuilderAPI.Domain.dll
+C:\Users\firat\source\repos\ReportBuilderAPI\Src\Core\ReportBuilderAPI.Domain\bin\Debug\net8.0\ReportBuilderAPI.Domain.pdb
+C:\Users\firat\source\repos\ReportBuilderAPI\Src\Core\ReportBuilderAPI.Domain\obj\Debug\net8.0\ReportBuilderAPI.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\firat\source\repos\ReportBuilderAPI\Src\Core\ReportBuilderAPI.Domain\obj\Debug\net8.0\ReportBuilderAPI.Domain.AssemblyInfoInputs.cache
+C:\Users\firat\source\repos\ReportBuilderAPI\Src\Core\ReportBuilderAPI.Domain\obj\Debug\net8.0\ReportBuilderAPI.Domain.AssemblyInfo.cs
+C:\Users\firat\source\repos\ReportBuilderAPI\Src\Core\ReportBuilderAPI.Domain\obj\Debug\net8.0\ReportBuilderAPI.Domain.csproj.CoreCompileInputs.cache
+C:\Users\firat\source\repos\ReportBuilderAPI\Src\Core\ReportBuilderAPI.Domain\obj\Debug\net8.0\ReportBuilderAPI.Domain.sourcelink.json
+C:\Users\firat\source\repos\ReportBuilderAPI\Src\Core\ReportBuilderAPI.Domain\obj\Debug\net8.0\ReportBuilderAPI.Domain.dll
+C:\Users\firat\source\repos\ReportBuilderAPI\Src\Core\ReportBuilderAPI.Domain\obj\Debug\net8.0\refint\ReportBuilderAPI.Domain.dll
+C:\Users\firat\source\repos\ReportBuilderAPI\Src\Core\ReportBuilderAPI.Domain\obj\Debug\net8.0\ReportBuilderAPI.Domain.pdb
+C:\Users\firat\source\repos\ReportBuilderAPI\Src\Core\ReportBuilderAPI.Domain\obj\Debug\net8.0\ref\ReportBuilderAPI.Domain.dll

@@ -1,12 +1,11 @@
 {
   "Version": 1,
-  "Hash": "vprkcTW+ZWEECQVX5RWht46pOK8HecHb7yf4nTlFKFs=",
+  "Hash": "Eq/MLyFtDu96oRAmEh2Mx6/WDWls3QmrOfDflXIc6ts=",
   "Source": "ReportBuilderAPI.API",
   "BasePath": "_content/ReportBuilderAPI.API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
+  "Assets": []
 }

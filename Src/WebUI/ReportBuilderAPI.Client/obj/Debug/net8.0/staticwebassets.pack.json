@@ -1,28 +1,24 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Geotek\\source\\repos\\ReportBuilderAPI\\Src\\WebUI\\ReportBuilderAPI.Client\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ReportBuilderAPI.Client.bundle.scp.css",
-      "PackagePath": "staticwebassets\\ReportBuilderAPI.Client.lhaaxcz6ss.bundle.scp.css"
+      "Id": "C:\\Users\\firat\\source\\repos\\ReportBuilderAPI\\Src\\WebUI\\ReportBuilderAPI.Client\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ReportBuilderAPI.Client.bundle.scp.css",
+      "PackagePath": "staticwebassets\\ReportBuilderAPI.Client.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\Geotek\\source\\repos\\ReportBuilderAPI\\Src\\WebUI\\ReportBuilderAPI.Client\\wwwroot\\app.css",
+      "Id": "C:\\Users\\firat\\source\\repos\\ReportBuilderAPI\\Src\\WebUI\\ReportBuilderAPI.Client\\wwwroot\\app.css",
       "PackagePath": "staticwebassets\\app.css"
     },
     {
-      "Id": "C:\\Users\\Geotek\\source\\repos\\ReportBuilderAPI\\Src\\WebUI\\ReportBuilderAPI.Client\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Id": "C:\\Users\\firat\\source\\repos\\ReportBuilderAPI\\Src\\WebUI\\ReportBuilderAPI.Client\\wwwroot\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\Geotek\\source\\repos\\ReportBuilderAPI\\Src\\WebUI\\ReportBuilderAPI.Client\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\firat\\source\\repos\\ReportBuilderAPI\\Src\\WebUI\\ReportBuilderAPI.Client\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Geotek\\source\\repos\\ReportBuilderAPI\\Src\\WebUI\\ReportBuilderAPI.Client\\wwwroot\\favicon.png",
+      "Id": "C:\\Users\\firat\\source\\repos\\ReportBuilderAPI\\Src\\WebUI\\ReportBuilderAPI.Client\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
-    },
-    {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ReportBuilderAPI.Client.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
-      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ReportBuilderAPI.Client.Microsoft.AspNetCore.StaticWebAssets.props",

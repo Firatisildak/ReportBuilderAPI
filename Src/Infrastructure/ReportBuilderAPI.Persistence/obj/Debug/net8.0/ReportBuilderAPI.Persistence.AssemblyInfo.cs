@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ReportBuilderAPI.Persistence")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+36570b1ff4017db0b677e8cf4f5c0a88a3f72529")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a9c1b33c98e07b08859bb429c6a5f6e32eadcfa8")]
 [assembly: System.Reflection.AssemblyProductAttribute("ReportBuilderAPI.Persistence")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ReportBuilderAPI.Persistence")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

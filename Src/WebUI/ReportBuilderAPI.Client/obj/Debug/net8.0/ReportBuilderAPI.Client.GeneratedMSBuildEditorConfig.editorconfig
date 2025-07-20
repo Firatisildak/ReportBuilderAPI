@@ -12,61 +12,59 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ReportBuilderAPI.Client
 build_property.RootNamespace = ReportBuilderAPI.Client
-build_property.ProjectDir = C:\Users\Geotek\source\repos\ReportBuilderAPI\Src\WebUI\ReportBuilderAPI.Client\
+build_property.ProjectDir = C:\Users\firat\source\repos\ReportBuilderAPI\Src\WebUI\ReportBuilderAPI.Client\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Geotek\source\repos\ReportBuilderAPI\Src\WebUI\ReportBuilderAPI.Client
+build_property.MSBuildProjectDirectory = C:\Users\firat\source\repos\ReportBuilderAPI\Src\WebUI\ReportBuilderAPI.Client
 build_property._RazorSourceGeneratorDebug = 
-build_property.EffectiveAnalysisLevelStyle = 8.0
-build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/Geotek/source/repos/ReportBuilderAPI/Src/WebUI/ReportBuilderAPI.Client/Components/App.razor]
+[C:/Users/firat/source/repos/ReportBuilderAPI/Src/WebUI/ReportBuilderAPI.Client/Components/App.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Geotek/source/repos/ReportBuilderAPI/Src/WebUI/ReportBuilderAPI.Client/Components/Pages/Counter.razor]
+[C:/Users/firat/source/repos/ReportBuilderAPI/Src/WebUI/ReportBuilderAPI.Client/Components/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb3VudGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Geotek/source/repos/ReportBuilderAPI/Src/WebUI/ReportBuilderAPI.Client/Components/Pages/Error.razor]
+[C:/Users/firat/source/repos/ReportBuilderAPI/Src/WebUI/ReportBuilderAPI.Client/Components/Pages/Error.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Geotek/source/repos/ReportBuilderAPI/Src/WebUI/ReportBuilderAPI.Client/Components/Pages/Home.razor]
+[C:/Users/firat/source/repos/ReportBuilderAPI/Src/WebUI/ReportBuilderAPI.Client/Components/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Geotek/source/repos/ReportBuilderAPI/Src/WebUI/ReportBuilderAPI.Client/Components/Pages/Orallar.razor]
+[C:/Users/firat/source/repos/ReportBuilderAPI/Src/WebUI/ReportBuilderAPI.Client/Components/Pages/Orallar.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xPcmFsbGFyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Geotek/source/repos/ReportBuilderAPI/Src/WebUI/ReportBuilderAPI.Client/Components/Pages/OrallarAllRaportBarChart.razor]
+[C:/Users/firat/source/repos/ReportBuilderAPI/Src/WebUI/ReportBuilderAPI.Client/Components/Pages/OrallarAllRaportBarChart.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xPcmFsbGFyQWxsUmFwb3J0QmFyQ2hhcnQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Geotek/source/repos/ReportBuilderAPI/Src/WebUI/ReportBuilderAPI.Client/Components/Pages/OrallarAllRaportLineChart.razor]
+[C:/Users/firat/source/repos/ReportBuilderAPI/Src/WebUI/ReportBuilderAPI.Client/Components/Pages/OrallarAllRaportLineChart.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xPcmFsbGFyQWxsUmFwb3J0TGluZUNoYXJ0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Geotek/source/repos/ReportBuilderAPI/Src/WebUI/ReportBuilderAPI.Client/Components/Pages/Weather.razor]
+[C:/Users/firat/source/repos/ReportBuilderAPI/Src/WebUI/ReportBuilderAPI.Client/Components/Pages/Weather.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xXZWF0aGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Geotek/source/repos/ReportBuilderAPI/Src/WebUI/ReportBuilderAPI.Client/Components/Routes.razor]
+[C:/Users/firat/source/repos/ReportBuilderAPI/Src/WebUI/ReportBuilderAPI.Client/Components/Routes.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Geotek/source/repos/ReportBuilderAPI/Src/WebUI/ReportBuilderAPI.Client/Components/_Imports.razor]
+[C:/Users/firat/source/repos/ReportBuilderAPI/Src/WebUI/ReportBuilderAPI.Client/Components/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Geotek/source/repos/ReportBuilderAPI/Src/WebUI/ReportBuilderAPI.Client/Components/Layout/MainLayout.razor]
+[C:/Users/firat/source/repos/ReportBuilderAPI/Src/WebUI/ReportBuilderAPI.Client/Components/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-6l0rtqwohr
 
-[C:/Users/Geotek/source/repos/ReportBuilderAPI/Src/WebUI/ReportBuilderAPI.Client/Components/Layout/NavMenu.razor]
+[C:/Users/firat/source/repos/ReportBuilderAPI/Src/WebUI/ReportBuilderAPI.Client/Components/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-pcimyi024m
